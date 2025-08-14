@@ -8,6 +8,18 @@ return {
     dependencies = { "nvim-lua/plenary.nvim" },
     config = function()
       require("telescope").setup({
+        defaults = {
+          mappings = {
+            i = {
+              ["<C-t>"] = "select_tab",      -- Ctrl+T to open in new tab
+              ["<CR>"] = "select_tab",       -- Enter opens in new tab by default
+            },
+            n = {
+              ["<C-t>"] = "select_tab",      -- Ctrl+T to open in new tab
+              ["<CR>"] = "select_tab",       -- Enter opens in new tab by default
+            },
+          },
+        },
         extensions = {
           ["ui-select"] = {
             require("telescope.themes").get_dropdown({}),
