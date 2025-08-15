@@ -7,5 +7,14 @@ return {
   end,
   opts = {
     -- your options go here
-  }
+  },
+  keys = {
+    {
+      "<leader>q",
+      function()
+        vim.cmd("qa")
+      end,
+      desc = "Quit All",
+    },
+  },
 }
