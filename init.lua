@@ -11,5 +11,11 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+-- Cargar opciones de Vim
 require("vim-options")
+
+-- Cargar keymaps personalizados
+require("config.keymaps")
+
+-- Inicializar Lazy.nvim
 require("lazy").setup("plugins")
