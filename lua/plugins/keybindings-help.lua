@@ -12,7 +12,7 @@ return {
     {
       "<leader>q",
       function()
-        vim.cmd("qa")
+        vim.cmd("qa!")
       end,
       desc = "Quit All",
     },
